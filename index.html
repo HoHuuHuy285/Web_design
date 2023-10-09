@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Mirosoft To do</title>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <div class="header">
+        <img class="header__img" src="./img/logo.png" alt="logo" />
+        <p class="header__text">To Do</p>
+      </div>
+      <div class="main">
+        <div class="main__navbar">
+          <div class="user__box">
+            <svg
+              width="20"
+              height="20"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              class="fluentIcon ___12fm75w f1w7gpdv fez10in fg4l7m0"
+            >
+              <g class="layer">
+                <title>Layer 1</title>
+                <path
+                  d="m2,4.5c0,-0.28 0.22,-0.5 0.5,-0.5l15,0a0.5,0.5 0 0 1 0,1l-15,0a0.5,0.5 0 0 1 -0.5,-0.5zm0,5c0,-0.28 0.22,-0.5 0.5,-0.5l15,0a0.5,0.5 0 0 1 0,1l-15,0a0.5,0.5 0 0 1 -0.5,-0.5zm0.5,4.5a0.5,0.5 0 0 0 0,1l15,0a0.5,0.5 0 0 0 0,-1l-15,0z"
+                  fill="#ffffff"
+                  id="svg_1"
+                />
+              </g>
+            </svg>
+          </div>
+          <div class="navbar__box navbar__box1 navbar__box1__color">
+            <div class="hover__left hover__left__color" id="hover__left1"></div>
+            <img class="navbar__sun" src="./img/sun.png" alt="sun" />
+            <p class="navbar__text">My day</p>
+          </div>
+
+          <div class="navbar__box navbar__box2 hover__margin2">
+            <div class="hover__left2"></div>
+            <img
+              class="navbar__sun"
+              src="./img/think__star-red.png"
+              alt="sun"
+            />
+            <p class="navbar__text navbar__text__weight">Important</p>
+          </div>
+
+          <div class="navbar__box navbar__box3 hover__margin2">
+            <div class="hover__left3"></div>
+            <img
+              class="navbar__sun"
+              src="./img/think__star-green.png"
+              alt="sun"
+            />
+            <p class="navbar__text navbar__text__weight2">Middle</p>
+          </div>
+
+          <div class="navbar__box navbar__box4 hover__margin2">
+            <div class="hover__left4"></div>
+            <img
+              class="navbar__sun"
+              src="./img/bold__star-white.png"
+              alt="sun"
+            />
+            <p class="navbar__text navbar__text__weight3">Common</p>
+          </div>
+        </div>
+        <div class="main__content main__content__bg">
+          <div class="main__header">
+            <div class="text__box">
+              <p class="h1__main">My Day</p>
+              <p class="h3__main">
+                <span id="day"></span>, <span id="day__number"></span>
+                <span id="month"></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="main__task-contant main__image main__task">
+            <div class="main__img-img">
+              <div class="main__wall-main">
+                <img class="focus" src="./img/focus.png" alt="focus" />
+                <p class="focus__h1">Focus on your day</p>
+                <p class="focus__h2">
+                  Get things done with My Day, a list that refreshes every day.
+                </p>
+              </div>
+            </div>
+            <div class="main__task__contant">
+              <div class="main__task__contant__important"></div>
+              <div class="main__task__contant__middle"></div>
+              <div class="main__task__contant__common"></div>
+            </div>
+          </div>
+
+          <div class="main__top">
+            <div class="task__menu">
+              <div class="task__left">
+                <div class="tisk-ok"></div>
+                <input placeholder="Add task" class="input__task" type="text" />
+              </div>
+              <div class="task__right">
+                <img class="task__img" src="./img/task__image.png" alt="img" />
+                <p class="importans__choice">Tasks</p>
+              </div>
+              <div class="important__box-main">
+                <div class="important__chosee important__chosee1">
+                  <img
+                    class="important__star"
+                    src="./img/think__star-red.png"
+                    alt="red"
+                  />
+                  <p class="important__text">Important</p>
+                </div>
+                <div class="important__chosee important__chosee2">
+                  <img
+                    class="important__star"
+                    src="./img/think__star-green.png"
+                    alt="red"
+                  />
+                  <p class="important__text">Middle</p>
+                </div>
+                <div class="important__chosee important__chosee3">
+                  <img
+                    class="important__star"
+                    src="./img/bold__star-white.png"
+                    alt="red"
+                  />
+                  <p class="important__text">Common</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
